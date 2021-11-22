@@ -1,0 +1,115 @@
+.box {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(police/Roboto/Roboto-regular.ttf);
+}
+@font-face {
+  font-family: "roboto-medium";
+  src: url(police/Roboto/Roboto-medium.ttf);
+}
+@font-face {
+  font-family: "shrikhand";
+  src: url(police/Shrikhand/Shrikhand-Regular.ttf);
+}
+body {
+  max-width: 450px;
+  margin: auto;
+  font-family: "roboto";
+}
+
+/* header */
+.logo-site {
+  display: flex;
+  justify-content: center;
+}
+.logo-site .logo {
+  width: 40%;
+}
+
+.logo-site-menu {
+  display: flex;
+}
+.logo-site-menu .logo {
+  width: 40%;
+}
+.logo-site-menu i.fas.fa-arrow-left {
+  font-size: 140%;
+  color: black;
+  margin-top: 6px;
+  padding-left: 30px;
+  padding-right: 75px;
+}
+
+/* main */
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fafafa;
+}
+.menu p {
+  opacity: 60%;
+  font-size: 130%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.menu h1 {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-family: "roboto-medium";
+  font-size: 1.8em;
+}
+
+.form-menu {
+  background-color: #f2f2f2;
+  padding: 18px 0px 18px 75px;
+  border-left: 1px #fafafa double;
+  border-right: 1px #fafafa double;
+  box-shadow: inset 0px 3px 2px #d5d5d5;
+}
+.form-menu .ville {
+  background-color: #f2f2f2;
+  border-width: 0px;
+  font-size: 110%;
+  opacity: 75%;
+}
+.form-menu i.fas.fa-map-marker-alt {
+  font-size: 120%;
+  opacity: 75%;
+  padding-right: 20px;
+}
+
+/* nouveaux commentaires */
+.card-restaurant {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 300px;
+}
+.card-restaurant .photo-restaurant {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=fichiercss.css.map */
