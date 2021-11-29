@@ -1,0 +1,18 @@
+.menu__form {
+  background-color: $couleur-form;
+  padding: 15px 0px 15px 80px;
+  border-left: 1px $couleur-menu double;
+  border-right: 1px $couleur-menu double;
+  box-shadow: inset 0px 3px 2px #d5d5d5;
+  width: 100%;
+  .menu__form__ville {
+    background-color: $couleur-form;
+    border-width: 0px;
+    opacity: 75%;
+    font-weight: bold;
+  }
+  i.fas.fa-map-marker-alt {
+    opacity: 75%;
+    padding-right: 15px;
+  }
+}

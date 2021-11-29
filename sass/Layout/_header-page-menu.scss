@@ -1,0 +1,13 @@
+.header-resto {
+  display: flex;
+  .header-resto__logo {
+    width: 40%;
+  }
+  i.fas.fa-arrow-left {
+    font-size: 140%;
+    color: black;
+    margin-top: 6px;
+    padding-left: 30px;
+    padding-right: 75px;
+  }
+}

@@ -31,7 +31,6 @@ body {
   font-family: "roboto";
 }
 
-/* header */
 .header {
   display: flex;
   justify-content: center;
@@ -41,26 +40,47 @@ body {
   width: 40%;
 }
 
-.header-resto {
-  display: flex;
-}
-.header-resto .header-resto__logo {
-  width: 40%;
-}
-.header-resto i.fas.fa-arrow-left {
-  font-size: 140%;
-  color: black;
-  margin-top: 6px;
-  padding-left: 30px;
-  padding-right: 75px;
-}
-
-/* main */
 main {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 15px;
+}
+
+footer {
+  background: #383838;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .footer__logo {
+  justify-content: left;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+footer .footer__logo--blanc {
+  width: 30%;
+  filter: invert(100%);
+}
+footer ul {
+  list-style-type: none;
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+footer li {
+  margin-bottom: 10px;
+}
+footer .footer__liens a {
+  text-decoration: none;
+  color: white;
+}
+footer i.fas.fa-utensils {
+  margin-right: 10px;
+}
+footer i.fas.fa-hands-helping {
+  margin-right: 8px;
+  font-size: 75%;
 }
 
 .menu__form {
@@ -102,15 +122,19 @@ main {
   font-weight: bold;
   font-size: 1.6em;
 }
-.menu .menu__explorer {
-  color: white;
-  background-color: #ff79da;
-  height: 50px;
-  border-radius: 25px;
-  width: min-content;
-  padding: 0 25px 0 25px;
-  margin-bottom: 60px;
-  box-shadow: 5px 5px 5px #d5d5d5, inset -10px -10px 40px #9356dc;
+
+.header-resto {
+  display: flex;
+}
+.header-resto .header-resto__logo {
+  width: 40%;
+}
+.header-resto i.fas.fa-arrow-left {
+  font-size: 140%;
+  color: black;
+  margin-top: 6px;
+  padding-left: 30px;
+  padding-right: 75px;
 }
 
 .fonctionnement h2 {
@@ -241,40 +265,15 @@ main {
   margin-right: 25px;
 }
 
-footer {
-  background: #383838;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-footer .footer__logo {
-  justify-content: left;
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-footer .footer__logo--blanc {
-  width: 30%;
-  filter: invert(100%);
-}
-footer ul {
-  list-style-type: none;
-  margin-bottom: 40px;
-  padding-left: 30px;
-}
-footer li {
-  margin-bottom: 10px;
-}
-footer .footer__liens a {
-  text-decoration: none;
+.menu__explorer {
   color: white;
-}
-footer i.fas.fa-utensils {
-  margin-right: 10px;
-}
-footer i.fas.fa-hands-helping {
-  margin-right: 8px;
-  font-size: 75%;
+  background-color: #ff79da;
+  height: 50px;
+  border-radius: 25px;
+  width: min-content;
+  padding: 0 25px 0 25px;
+  margin-bottom: 60px;
+  box-shadow: 5px 5px 5px #d5d5d5, inset -10px -10px 40px #9356dc;
 }
 
 /*# sourceMappingURL=fichiercss.css.map */

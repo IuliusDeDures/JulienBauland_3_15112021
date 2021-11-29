@@ -1,0 +1,10 @@
+.menu__explorer {
+  color: white;
+  background-color: $couleur-secondaire;
+  height: 50px;
+  border-radius: 25px;
+  width: min-content;
+  padding: 0 25px 0 25px;
+  margin-bottom: 60px;
+  box-shadow: 5px 5px 5px #d5d5d5, inset -10px -10px 40px $couleur-primaire;
+}
