@@ -8,6 +8,9 @@
     margin-left: 20px;
     margin-bottom: 15px;
   }
+  @media (min-width: 900px) {
+    max-width: 960px;
+  }
 }
 .restaurant__ensemble-cards {
   display: flex;
@@ -31,7 +34,7 @@
     }
     .restaurant__photo__commentaire {
       color: #179b76;
-      background: #a1f0dc;
+      background: $couleur-tertiaire;
       width: fit-content;
       position: absolute;
       right: 15px;
@@ -57,12 +60,22 @@
       .restaurant__texte p {
         margin-top: 1px;
         margin-left: 15px;
+        font-family: "roboto-light";
       }
       i.far.fa-heart {
         font-size: 140%;
         margin-top: 20px;
         margin-right: 25px;
       }
+    }
+  }
+  @media (min-width: 900px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .restaurant__cards {
+      width: 400px;
+      margin: 10px;
     }
   }
 }

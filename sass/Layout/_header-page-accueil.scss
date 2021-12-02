@@ -3,6 +3,11 @@
   justify-content: center;
   margin-top: 30px;
   .header__logo {
-    width: 40%;
+    width: 180px;
   }
+  @media (min-width: 451px) {
+    max-width: 960px;
+    justify-content: left;
+  }
+  
 }

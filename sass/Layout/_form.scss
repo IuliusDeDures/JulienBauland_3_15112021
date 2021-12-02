@@ -15,4 +15,8 @@
     opacity: 75%;
     padding-right: 15px;
   }
+  @media (min-width: 451px) {
+    max-width: 960px;
+    padding-left: 40px;
+  }
 }

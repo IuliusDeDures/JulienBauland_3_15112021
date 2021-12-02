@@ -54,3 +54,20 @@
     }
   }
 }
+@media (min-width: 451px) {
+  .fonctionnement__étape {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    ol {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      li {
+        width: max-content;
+        padding-right: 30px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

@@ -5,7 +5,8 @@
   text-align: center;
   background-color: $couleur-menu;
   p {
-    opacity: 60%;
+    font-family: "roboto-light";
+    opacity: 70%;
     margin-top: 15px;
     margin-bottom: 30px;
     font-size: 110%;
@@ -16,5 +17,20 @@
     font-family: "roboto-medium";
     font-weight: bold;
     font-size: 1.6em;
+  }
+  @media (min-width: 451px)  {
+    max-width: 960px;
+    text-align: left;
+    align-items: flex-start; 
+    p{
+      margin-left: 40px;
+    }   
+    h1{
+      margin-left: 40px;
+    }
+    br{
+      display:none;
+    }
+    
   }
 }
