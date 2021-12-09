@@ -334,7 +334,7 @@ footer i.fas.fa-hands-helping {
     justify-content: center;
   }
   .restaurant__ensemble-cards .restaurant__cards {
-    width: 400px;
+    width: 46%;
     margin: 10px;
   }
 }
@@ -432,7 +432,20 @@ footer i.fas.fa-hands-helping {
     flex-wrap: wrap;
   }
   .resto .choix__info {
-    width: 450px;
+    width: 100%;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 960px) {
+  .resto {
+    max-width: 960px;
+  }
+  .resto .choix {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .resto .choix__info {
+    width: 48%;
     margin-right: 15px;
   }
 }
