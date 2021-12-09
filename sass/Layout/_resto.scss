@@ -90,9 +90,22 @@
       flex-wrap: wrap;
     }
     .choix__info {
-      width: 450px;
+      width: 100%;
+      margin-right: 15px;
+      
+    }
+  }
+  @media (min-width: 960px) {
+    max-width: 960px;
+    .choix {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .choix__info {
+      width: 48%;
       margin-right: 15px;
       
     }
   }
 }
+
