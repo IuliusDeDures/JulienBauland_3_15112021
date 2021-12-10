@@ -1,0 +1,33 @@
+.choix__valider {
+  display: flex;
+  background: $couleur-tertiaire;
+  border-radius: 0 20px 20px 0;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 400ms;
+}
+i.fas.fa-check-circle {
+  font-size: 150%;
+  color: white;
+}
+.choix__info:hover {
+  .choix__valider {
+    width: 20%;
+    transform: scaleX(1);
+    transition: all 400ms;
+  }
+  i.fas.fa-check-circle {
+    animation: anim-circle 300ms ease-in-out;
+  }
+}
+@keyframes anim-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

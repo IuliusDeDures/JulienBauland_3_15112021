@@ -384,19 +384,25 @@ footer i.fas.fa-hands-helping {
   width: 45px;
 }
 .resto .choix__info {
+  transform-origin: top;
   background: white;
   border-radius: 20px;
   box-shadow: 3px 5px 5px 5px #f2f2f2;
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .resto .choix__info h3 {
   margin: 10px 0 10px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.resto .choix__info .choix__text-info {
+.resto .choix__text-info {
   width: 100%;
-  margin-right: 25px;
+  padding-right: 20px;
+  overflow: hidden;
 }
 .resto .choix__détail {
   display: flex;
@@ -405,23 +411,14 @@ footer i.fas.fa-hands-helping {
 }
 .resto .choix__détail p {
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .resto .choix__détail .choix__prix {
   font-family: "roboto-medium";
   font-weight: bold;
-}
-.resto i.fas.fa-check-circle {
-  display: none;
-}
-.resto .choix__info:hover i.fas.fa-check-circle {
-  width: 20%;
-  background: #99e2d0;
-  border-radius: 0 20px 20px 0;
-  font-size: 150%;
-  color: white;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  overflow: initial;
 }
 @media (min-width: 451px) {
   .resto {
@@ -484,6 +481,62 @@ footer i.fas.fa-hands-helping {
   height: 260px;
   object-fit: cover;
   overflow: hidden;
+}
+
+.choix__valider {
+  display: flex;
+  background: #99e2d0;
+  border-radius: 0 20px 20px 0;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 400ms;
+}
+
+i.fas.fa-check-circle {
+  font-size: 150%;
+  color: white;
+}
+
+.choix__info:hover .choix__valider {
+  width: 20%;
+  transform: scaleX(1);
+  transition: all 400ms;
+}
+.choix__info:hover i.fas.fa-check-circle {
+  animation: anim-circle 300ms ease-in-out;
+}
+
+@keyframes anim-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes apparition-plat {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+.resto__entrées .choix__info {
+  animation: apparition-plat 500ms;
+}
+
+.resto__plats .choix__info {
+  animation: apparition-plat 1000ms;
+}
+
+.resto__desserts .choix__info {
+  animation: apparition-plat 1500ms;
 }
 
 /*# sourceMappingURL=fichiercss.css.map */

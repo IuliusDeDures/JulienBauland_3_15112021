@@ -1,0 +1,25 @@
+@keyframes apparition-plat {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+.resto__entrées {
+  .choix__info {
+    animation: apparition-plat 500ms;
+  }
+}
+.resto__plats {
+  .choix__info {
+    animation: apparition-plat 1000ms;
+  }
+}
+.resto__desserts {
+  .choix__info {
+    animation: apparition-plat 1500ms;
+  }
+}
