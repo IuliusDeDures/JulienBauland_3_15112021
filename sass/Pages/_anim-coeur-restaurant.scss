@@ -1,0 +1,51 @@
+.restaurant__coeur {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  i.far.fa-heart {
+    font-size: 160%;
+    display: flex;
+    align-self: center;
+  }
+  i.fas.fa-heart {
+    font-size: 0%;
+    display: flex;
+    align-self: center;
+  }
+}
+.restaurant__cards:focus {
+  i.fas.fa-heart {
+    font-size: 160%;
+    color: $couleur-primaire;
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+    animation: restaurant__bouton 300ms both;
+  }
+  i.far.fa-heart {
+    font-size: 0%;
+  }
+}
+@media (min-width: 900px) {
+  .restaurant__cards:hover {
+    i.fas.fa-heart {
+      font-size: 160%;
+      color: $couleur-primaire;
+      transform-origin: bottom;
+      transform: scaleY(0.5);
+      animation: restaurant__bouton 300ms both;
+    }
+    i.far.fa-heart {
+      font-size: 0%;
+    }
+  }
+}
+@keyframes restaurant__bouton {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}

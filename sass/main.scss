@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+@import "./Base/box-sizing";
+@import "./Base/police";
+@import "./Utils/couleurs";
+@import "./Layout/body";
+@import "./Layout/header-page-accueil";
+@import "./Layout/main-page-accueil";
+@import "./Layout/footer";
+@import "./Layout/form";
+@import "./Layout/menu-page-accueil";
+@import "./Layout/header-page-menu";
+@import "./Layout/fonctionnement";
+@import "./Layout/restaurant";
+@import "./Layout/resto";
+@import "./Composants/bouton-page-accueil";
+@import "./Composants/bouton-page-menu";
+@import "./Composants/photo-resto";
+@import "./Pages/anim-coche-resto";
+@import "./Pages/anim-apparition-plat";
+@import "./Pages/anim-coeur-restaurant";
+=======
 @import "./Base/box-sizing";
 @import "./Base/police";
 @import "./Utils/couleurs";
@@ -16,3 +37,4 @@
 @import "./Composants/photo-resto";
 @import "./Pages/anim-coche-resto.scss";
 @import "./Pages/anim-apparition-plat.scss";
+>>>>>>> 07ad3c67de2656d504e4a66b2e2f6ec39655a993
