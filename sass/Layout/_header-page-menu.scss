@@ -2,12 +2,13 @@
   display: flex;
   margin-top: 30px;
   .header-resto__logo {
-    width: 180px;
+    max-width: 180px;
+    width: 100%;
   }
   i.fas.fa-arrow-left {
     font-size: 140%;
     color: black;
     padding-left: 30px;
-    padding-right: 75px;
+    padding-right: 70px;
   }
 }
