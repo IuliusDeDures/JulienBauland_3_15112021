@@ -11,3 +11,7 @@
     margin-left: 40px;
   }
 }
+.menu__explorer:hover {
+  opacity: 0.95;
+  box-shadow: 5px 5px 5px #b6b6b6, inset -10px -10px 40px $couleur-primaire;
+}

@@ -13,3 +13,7 @@
   @media (min-width: 451px) {
   }
 }
+.resto__commande:hover {
+  opacity: 0.95;
+  box-shadow: 5px 5px 5px #b6b6b6, inset -10px -10px 40px $couleur-primaire;
+}

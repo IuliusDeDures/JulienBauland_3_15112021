@@ -456,6 +456,11 @@ footer i.fas.fa-hands-helping {
   }
 }
 
+.menu__explorer:hover {
+  opacity: 0.95;
+  box-shadow: 5px 5px 5px #b6b6b6, inset -10px -10px 40px #9356dc;
+}
+
 .resto__commande {
   color: white;
   background-color: #ff79da;
@@ -469,6 +474,11 @@ footer i.fas.fa-hands-helping {
   box-shadow: 5px 5px 5px #d5d5d5, inset -10px -10px 40px #9356dc;
   align-self: center;
 }
+.resto__commande:hover {
+  opacity: 0.95;
+  box-shadow: 5px 5px 5px #b6b6b6, inset -10px -10px 40px #9356dc;
+}
+
 .photo-resto {
   max-width: 960px;
   height: 260px;
@@ -598,10 +608,13 @@ i.fas.fa-check-circle {
   }
 }
 .load {
+  animation: display-load 2000ms both;
   width: 100%;
-  height: 300px;
-  max-width: 500px;
+  height: 500px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .load .load_1 {
   display: flex;
@@ -609,7 +622,7 @@ i.fas.fa-check-circle {
   background-color: #9356dc;
   border-radius: 50px;
   width: 90%;
-  height: 33%;
+  height: 120px;
 }
 .load .load_1 .header__logo {
   display: flex;
@@ -617,7 +630,7 @@ i.fas.fa-check-circle {
   margin: auto;
   width: 80%;
   transform-origin: left;
-  animation: load_ohmyfood 1000ms backwards 1 ease-in-out alternate;
+  animation: load_ohmyfood 600ms backwards 3 ease-in-out alternate;
 }
 .load .load_2 {
   display: flex;
@@ -625,7 +638,7 @@ i.fas.fa-check-circle {
   background-color: #ff79da;
   border-radius: 50px;
   width: 90%;
-  height: 33%;
+  height: 120px;
 }
 .load .load_2 .header__logo {
   display: flex;
@@ -633,7 +646,7 @@ i.fas.fa-check-circle {
   margin: auto;
   width: 80%;
   transform-origin: right;
-  animation: load_ohmyfood 1000ms backwards 1 ease-in-out alternate;
+  animation: load_ohmyfood 650ms backwards 3 ease-in-out alternate;
 }
 .load .load_3 {
   display: flex;
@@ -641,7 +654,7 @@ i.fas.fa-check-circle {
   background-color: #99e2d0;
   border-radius: 50px;
   width: 90%;
-  height: 33%;
+  height: 120px;
 }
 .load .load_3 .header__logo {
   display: flex;
@@ -649,7 +662,11 @@ i.fas.fa-check-circle {
   margin: auto;
   width: 80%;
   transform-origin: left;
-  animation: load_ohmyfood 1000ms backwards 1 ease-in-out alternate;
+  animation: load_ohmyfood 700ms backwards 3 ease-in-out alternate;
+}
+
+.contenu {
+  animation: display-contenu 2000ms;
 }
 
 @keyframes load_ohmyfood {
@@ -660,12 +677,50 @@ i.fas.fa-check-circle {
     transform: scalex(1);
   }
 }
-@keyframes load_fin {
+@keyframes display-load {
   0% {
-    transform: scalex(0.5);
+    visibility: visible;
+    width: 100%;
+    height: 500px;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    width: 100%;
+    height: 500px;
+    opacity: 0.9;
   }
   100% {
-    transform: scalex(1);
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+@keyframes display-contenu {
+  0% {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  98% {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  99% {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+  }
+  100% {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
   }
 }
 
