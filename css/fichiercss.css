@@ -53,6 +53,7 @@ body {
   .header {
     max-width: 960px;
     justify-content: left;
+    margin-left: 25px;
   }
 }
 
@@ -165,6 +166,7 @@ footer i.fas.fa-hands-helping {
 
 .header-resto {
   display: flex;
+  justify-content: center;
   margin-top: 30px;
 }
 .header-resto .header-resto__logo {
@@ -174,8 +176,19 @@ footer i.fas.fa-hands-helping {
 .header-resto i.fas.fa-arrow-left {
   font-size: 140%;
   color: black;
-  padding-left: 30px;
-  padding-right: 70px;
+  position: absolute;
+  left: 25px;
+  margin: 2px;
+}
+@media (min-width: 451px) {
+  .header-resto {
+    max-width: 960px;
+    justify-content: left;
+  }
+  .header-resto i.fas.fa-arrow-left {
+    position: static;
+    margin-right: 25px;
+  }
 }
 
 .fonctionnement h2 {
@@ -218,13 +231,22 @@ footer i.fas.fa-hands-helping {
   color: gray;
   padding-right: 25px;
 }
-.fonctionnement__étape ol .fonctionnement__étape-3 {
-  background: #f7f2f2;
-}
 .fonctionnement__étape ol i.fas.fa-store {
   font-size: 120%;
-  color: #9356dc;
+  color: gray;
   padding-right: 25px;
+}
+.fonctionnement__étape ol li:hover {
+  background-color: rgba(146, 86, 220, 0.1);
+}
+.fonctionnement__étape ol li:hover i.fas.fa-mobile-alt {
+  color: #9356dc;
+}
+.fonctionnement__étape ol li:hover i.fas.fa-list-ul {
+  color: #9356dc;
+}
+.fonctionnement__étape ol li:hover i.fas.fa-store {
+  color: #9356dc;
 }
 
 @media (min-width: 451px) {
@@ -344,12 +366,6 @@ footer i.fas.fa-hands-helping {
   font-size: 1.8em;
   margin-left: 20px;
 }
-.resto i.far.fa-heart {
-  font-size: 180%;
-  margin-top: 25px;
-  margin-right: 30px;
-  opacity: 75%;
-}
 .resto .resto__entrées {
   margin-left: 15px;
   margin-right: 15px;
@@ -449,6 +465,7 @@ footer i.fas.fa-hands-helping {
   padding: 0 25px 0 25px;
   margin-bottom: 60px;
   box-shadow: 5px 5px 5px #d5d5d5, inset -10px -10px 40px #9356dc;
+  border: none;
 }
 @media (min-width: 451px) {
   .menu__explorer {
@@ -473,6 +490,7 @@ footer i.fas.fa-hands-helping {
   margin-bottom: 80px;
   box-shadow: 5px 5px 5px #d5d5d5, inset -10px -10px 40px #9356dc;
   align-self: center;
+  border: none;
 }
 .resto__commande:hover {
   opacity: 0.95;
@@ -574,26 +592,24 @@ i.fas.fa-check-circle {
   align-self: center;
 }
 
-.restaurant__cards:focus i.fas.fa-heart {
+.restaurant__coeur:active i.fas.fa-heart {
   font-size: 160%;
   color: #9356dc;
   transform-origin: bottom;
-  transform: scaleY(0.5);
   animation: restaurant__bouton 300ms both;
 }
-.restaurant__cards:focus i.far.fa-heart {
+.restaurant__coeur:active i.far.fa-heart {
   font-size: 0%;
 }
 
 @media (min-width: 900px) {
-  .restaurant__cards:hover i.fas.fa-heart {
+  .restaurant__coeur:hover i.fas.fa-heart {
     font-size: 160%;
     color: #9356dc;
     transform-origin: bottom;
-    transform: scaleY(0.5);
     animation: restaurant__bouton 300ms both;
   }
-  .restaurant__cards:hover i.far.fa-heart {
+  .restaurant__coeur:hover i.far.fa-heart {
     font-size: 0%;
   }
 }
@@ -701,6 +717,55 @@ i.fas.fa-check-circle {
     visibility: visible;
     width: 100%;
     height: 100%;
+    opacity: 1;
+  }
+}
+.resto__coeur i.far.fa-heart {
+  font-size: 180%;
+  padding-top: 20px;
+  padding-right: 30px;
+  opacity: 75%;
+  color: black;
+}
+.resto__coeur i.fas.fa-heart {
+  font-size: 0%;
+}
+
+.resto__coeur:focus i.fas.fa-heart {
+  font-size: 180%;
+  padding-top: 20px;
+  padding-right: 30px;
+  color: #9356dc;
+  transform-origin: bottom;
+  transform: scaleY(0.5);
+  animation: bouton-coeur-resto 300ms both;
+}
+.resto__coeur:focus i.far.fa-heart {
+  font-size: 0%;
+  padding: 0%;
+}
+
+@media (min-width: 900px) {
+  .resto__coeur:hover i.fas.fa-heart {
+    font-size: 180%;
+    margin-top: 20px;
+    margin-right: 30px;
+    color: #9356dc;
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+    animation: bouton-coeur-resto 300ms both;
+  }
+  .resto__coeur:hover i.far.fa-heart {
+    font-size: 0%;
+  }
+}
+@keyframes bouton-coeur-resto {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
     opacity: 1;
   }
 }

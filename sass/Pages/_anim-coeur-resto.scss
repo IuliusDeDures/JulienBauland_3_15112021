@@ -1,0 +1,53 @@
+.resto__coeur {
+  i.far.fa-heart {
+    font-size: 180%;
+    padding-top: 20px;
+    padding-right: 30px;
+    opacity: 75%;
+    color: black;
+  }
+  i.fas.fa-heart {
+    font-size: 0%;
+  }
+}
+.resto__coeur:focus {
+  i.fas.fa-heart {
+    font-size: 180%;
+    padding-top: 20px;
+    padding-right: 30px;
+    color: $couleur-primaire;
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+    animation: bouton-coeur-resto 300ms both;
+  }
+  i.far.fa-heart {
+    font-size: 0%;
+    padding: 0%;
+  }
+}
+@media (min-width: 900px) {
+  .resto__coeur:hover {
+    i.fas.fa-heart {
+      font-size: 180%;
+      margin-top: 20px;
+      margin-right: 30px;
+      color: $couleur-primaire;
+      transform-origin: bottom;
+      transform: scaleY(0.5);
+      animation: bouton-coeur-resto 300ms both;
+    }
+    i.far.fa-heart {
+      font-size: 0%;
+    }
+  }
+}
+@keyframes bouton-coeur-resto {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}

@@ -36,13 +36,22 @@
     color: gray;
     padding-right: 25px;
   }
-  .fonctionnement__étape-3 {
-    background: #f7f2f2;
-  }
   i.fas.fa-store {
     font-size: 120%;
-    color: $couleur-primaire;
+    color: gray;
     padding-right: 25px;
+  }
+  li:hover {
+    background-color:rgba(146, 86, 220, 0.1);
+    i.fas.fa-mobile-alt {
+      color: $couleur-primaire;
+    }
+    i.fas.fa-list-ul {
+      color: $couleur-primaire;
+    }
+    i.fas.fa-store {
+      color: $couleur-primaire;
+    }
   }
 }
 @media (min-width: 451px) {

@@ -1,5 +1,6 @@
 .header-resto {
   display: flex;
+  justify-content: center;
   margin-top: 30px;
   .header-resto__logo {
     max-width: 180px;
@@ -7,8 +8,18 @@
   }
   i.fas.fa-arrow-left {
     font-size: 140%;
-    color: black;
-    padding-left: 30px;
-    padding-right: 70px;
+    color: black;    
+    position: absolute;
+    left: 25px;
+    margin: 2px;
+  }
+  @media (min-width: 451px) {
+    max-width: 960px;
+    justify-content: left;    
+    i.fas.fa-arrow-left{
+      position: static;
+      margin-right: 25px;
+    }
   }
 }
+
