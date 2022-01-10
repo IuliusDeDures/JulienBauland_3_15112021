@@ -238,6 +238,7 @@ footer i.fas.fa-hands-helping {
 }
 .fonctionnement__étape ol li:hover {
   background-color: rgba(146, 86, 220, 0.1);
+  cursor: pointer;
 }
 .fonctionnement__étape ol li:hover i.fas.fa-mobile-alt {
   color: #9356dc;
@@ -476,6 +477,7 @@ footer i.fas.fa-hands-helping {
 .menu__explorer:hover {
   opacity: 0.95;
   box-shadow: 5px 5px 5px #b6b6b6, inset -10px -10px 40px #9356dc;
+  cursor: pointer;
 }
 
 .resto__commande {
@@ -495,6 +497,7 @@ footer i.fas.fa-hands-helping {
 .resto__commande:hover {
   opacity: 0.95;
   box-shadow: 5px 5px 5px #b6b6b6, inset -10px -10px 40px #9356dc;
+  cursor: pointer;
 }
 
 .photo-resto {
